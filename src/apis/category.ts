@@ -1,6 +1,6 @@
 import request from '@/utils/http'
 
-export function getCategoryAPI(id) {
+export function getCategoryAPI(id: string) {
     return request({
         url: '/category',
         params: {
