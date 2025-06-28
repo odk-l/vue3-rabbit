@@ -8,3 +8,20 @@ export function getCategoryAPI(id: string) {
         }
     })
 }
+
+export function getCategoryFilterAPI(id: string) {
+    return request({
+        url: '/category/sub/filter',
+        params: {
+            id
+        }
+    })
+}
+
+export const getSubCategoryAPI = (data) => {
+    return request({
+        url: '/category/goods/temporary',
+        method: 'POST',
+        data
+    })
+}
