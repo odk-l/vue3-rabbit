@@ -36,7 +36,8 @@ const addCart = () => {
             count: count.value,
             skuId: skuObj.skuId,
             attrsText: skuObj.specsText,
-            selected: true
+            selected: true,
+            price: goods.value.price
         })
     } else {
         ElMessage.warning('请选择规格')
@@ -123,7 +124,7 @@ const addCart = () => {
 
                             <!-- 按钮组件 -->
                             <div>
-                                <el-button size="large" class="btn">
+                                <el-button @click="addCart" size="large" class="btn">
                                     加入购物车
                                 </el-button>
                             </div>
