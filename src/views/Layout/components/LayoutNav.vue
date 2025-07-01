@@ -1,5 +1,5 @@
 <script setup>
-/* import { useUserStore } from '@/stores/userStore'
+import { useUserStore } from '@/stores/user'
 import { useRouter } from 'vue-router'
 const userStore = useUserStore()
 const router = useRouter()
@@ -10,7 +10,7 @@ const confirm = () => {
   userStore.clearUserInfo()
   // 2.跳转到登录页
   router.push('/login')
-} */
+}
 </script>
 
 <template>
