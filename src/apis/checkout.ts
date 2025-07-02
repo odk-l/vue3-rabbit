@@ -5,3 +5,10 @@ export const getCheckInfoAPI = () => {
         url: '/member/order/pre',
     })
 }
+export const createOrderAPI = (data: any) => {
+    return request({
+        url: '/member/order',
+        method: 'POST',
+        data
+    })
+}
