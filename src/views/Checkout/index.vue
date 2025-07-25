@@ -375,7 +375,7 @@ const createOrder = async () => {
     &:hover,
     &.active {
         border-color: $xtxColor;
-        background: lighten($xtxColor, 50%);
+        background: color.scale($xtxColor, $lightness: 50%);
     }
 
     >ul {
